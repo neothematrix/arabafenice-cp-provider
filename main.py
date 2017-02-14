@@ -39,7 +39,7 @@ class ArabaFenice(TorrentProvider, MovieProvider):
     cat_backup_id = 0
 
     http_time_between_calls = 1  # Seconds
-    login_fail_msg = 'Username Incorrect'
+    login_fail_msg = ' Incorrect'
     only_tables_tags = SoupStrainer('table')
 
 
