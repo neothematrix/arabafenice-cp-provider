@@ -14,7 +14,7 @@ Make sure to enable it inside the "Searcher" section of CouchPotato configuratio
 
 ```
 # Download the ArabaFenice search provider (Italian torrents only, see http://www.arabafenice.me)
-https://github.com/neothematrix/arabafenice-cp-provider/archive/master.zip
+https://github.com/neothematrix/arabafenice-cp-provider/releases/latest
 
 # Shut down CouchPotatoServer, either by opening it up in a browser 
 # and going to "Settings" -> "Shutdown", or by terminating the process
