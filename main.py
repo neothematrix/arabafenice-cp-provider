@@ -85,9 +85,10 @@ class ArabaFenice(TorrentProvider, MovieProvider):
 
                     torrent_name = torrent.getText()
                     torrent_id = re.match('.*id=(.*)$',torrent['href']).group(1)
-                    torrent_seeders = tryInt(all_cells[7].getText())
-                    torrent_leechers = tryInt(all_cells[8].getText())
-                    torrent_size = self.parseSize(all_cells[11].getText())
+                    # check the number of columns before assuming the cell position, some user have a different visualisation
+                    torrent_seeders = tryInt(all_cells[7].getText()) if all_cells[13].getText() != "" else tryInt(all_cells[6].getText())
+                    torrent_leechers = tryInt(all_cells[8].getText()) if all_cells[13].getText() != "" else tryInt(all_cells[7].getText())
+                    torrent_size = self.parseSize(all_cells[11].getText()) if all_cells[13].getText() != "" else self.parseSize(all_cells[10].getText())
                     torrent_url = self.urls['baseurl'] % 'download.php?id=%s' % torrent_id
                     torrent_detail_url = self.urls['details'] % torrent_id
 
