@@ -3,14 +3,14 @@ arabafenice-cp-provider
 
 A CouchPotatoServer module to add the private tracker ArabaFenice as a torrent provider for Italian torrents.
 
-####SETUP INSTRUCTIONS (TL;DR)
+#### SETUP INSTRUCTIONS (TL;DR)
 
 Download the latest release zip file *https://github.com/neothematrix/arabafenice-cp-provider/releases/latest* and extract it
 inside a "arabafenice-cp-provider" folder into your CouchPotato "custom_plugins" folder (it's under CouchPotato data dir folder).
 If you don't know where your CouchPotato data dir folder is, open CouchPotato web interface, then go to: Settings -> About -> Directories.
 Make sure to enable it inside the "Searcher" section of CouchPotato configuration, and make sure to add your username and password (mandatory)
 
-####SETUP INSTRUCTIONS
+#### SETUP INSTRUCTIONS
 
 ```
 # Download the ArabaFenice search provider (Italian torrents only, see http://www.arabafenice.me)
